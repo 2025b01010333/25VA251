@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //JS variable data value type
+            //primitive :immutable single value and store to memory.
+            //string====
+            var myName="Apoorva Saini";
+            console.log("myname is: " + myName);
+            console.log(typeof (myName));
+            //number====
+            var myMob=4567899878;
+            console.log("myMob is: " + myMob);
+            console.log(typeof (myMob));
+            //boolean====
+            var isMarried=false;
+            console.log(myName + " is married ? " + isMarried);
+            console.log(typeof (isMarried));
+            //undefined====
+            var myAdd;
+            console.log(myName + "address is" + myAdd);
+            console.log(typeof (myAdd));
+            //null====
+            var myEmail=null;
+            console.log(myName + "email is" + myEmail);
+            console.log(typeof(myEmail));
+            //bigint====
+            var myValue=BigInt(123456789012345675667012345678901234567890);
+            console.log(myValue);
+            console.log(typeof(myValue));
+            //symbol- unique primitive data value type in JS
+            var val1=Symbol("Hello");
+            var val2=Symbol("Hello")
+            console.log(val1==val2);
+            console.log(typeof(val1) + "and" + typeof(val2));
+            //Refernce or non-primitive data value types====
+            //object{}- values are defined in paired of key value
+            let myInfo={
+                name:"Apoorva Saini" , 
+                age:19,
+                mob:9093330909, 
+                email:"apoorva@gmail.com",
+                isMarried:false,
+                address:null,
+                branch:"CSE",
+                section:18
+            }
+            console.log(myInfo);
+            //to find the length of object
+            console.log(Object.keys(myInfo).length);
+            console.log(myInfo.branch);
+            // array- collection of any data type in JS
+            let studentDetails=["Apoorva Saini", 19 , false ," apoorva@gmail.com"];
+            console.log(studentDetails[2]);
+            console.log(studentDetails.length);
+
+            for(i=0;i<studentDetails.length;i++){
+                console.log(studentDetails[i]);
+            }
+            //function- block of code i.e. perform particular any task
+            function myCal(){
+                let  num1=10;
+                let num2=5;
+                let result=num1+num2;
+                console.log("addition of two  numbers is" + (num1+num2));
+                console.log(result);
+            }
+          myCal();
+          h1.innerHTML="Welcome to JS";
+        </script>
+    </body>
+</html>
