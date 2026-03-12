@@ -28,22 +28,27 @@
             console.log(myInfo.education);
             console.log(myInfo.address.city);//access using dot notation
             console.log(myInfo["name"]);//access using bracket notation
-
-            // find object length 
-            let keys=Object.keys(myInfo);
-            console.log(keys.length);
-         // delete object property
-            console.log( delete myInfo.name);
-            console.log(myInfo);
-        // print object's property 
-         for (let i=0; i<keys.length;i++){
-            console.log("Objects keys are" + myInfo[keys[i]]);
-         }
-        // print Object's property using for 9n loop
-        for(let x in myInfo ){
-            console.log(myInfo[x]);
-        }
-
+           // find object length
+           let keys=Object.keys(myInfo);
+              console.log(keys.length);
+              console.log(age in myInfo);
+              console.log(delete myInfo.name);
+              console.log(myInfo);
+              // print object's property using loop
+              for(let i=0; i<keys.length; i++){
+                console.log("objects keys are: " + myInfo[keys[i]]);
+              }
+              // print object's property using for in loop
+              for(let x in myInfo){
+                console.log(myInfo[x]);
+              }
+              // create object using new keyword
+              let student = new Object();
+                student.name="Apoorva Saini";
+                student.age=19;
+                student.course="B.TECH";
+                student.address="Sre";
+                console.log(student);
             </script>
             </body>
             </html>
