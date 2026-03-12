@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conditional Statements in JS</title>
+    </head>
+    <body>
+        <script>
+         let studentLength=[23,45,67,89,90];
+         let sum=0;
+         for(let i=0; i<studentLength.length; i++){
+                sum=sum+studentLength[i];
+         }
+         let average=sum/studentLength.length;
+         console.log(average);
+         if(average>=60){
+                console.log("First Division Marks");
+            }
+            else if(average<=60 && average>=40){
+                console.log("Second Division Marks");
+            }
+            else if(average<40 && average>=33){
+                console.log("Third Division Marks");
+            }
+            else{
+                console.log("Fail");
+            }
+            </script>
+            </body>
+            </html>
